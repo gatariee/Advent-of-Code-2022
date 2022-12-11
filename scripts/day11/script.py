@@ -1,6 +1,6 @@
 monkeys = [] # of [0:op,1:arg,2:div,3:throw_t,4:throw_f,5:items,6:counter]
 modulus = 1
-for l in open("../../inputs/day11","rt"):
+for l in open("../../inputs/day11.txt","rt"):
   l = l.strip()
   if l.startswith("Monkey"):
     assert int(l[7])==len(monkeys)
@@ -42,10 +42,10 @@ for rnd in range(20):
 mb = sorted(m[6] for m in monkeys)
 print(mb[-1]*mb[-2])
 
-monkeys = save
+# monkeys = save
 
-for rnd in range(10000):
-  round(div=False)
+# for rnd in range(10000):
+#   round(div=False)
 
-mb = sorted(m[6] for m in monkeys)
-print(mb[-1]*mb[-2])
+# mb = sorted(m[6] for m in monkeys)
+# print(mb[-1]*mb[-2])
