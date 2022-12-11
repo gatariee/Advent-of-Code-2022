@@ -1,4 +1,4 @@
-monkeys = [] # of [0:op,1:arg,2:div,3:throw_t,4:throw_f,5:items,6:counter]
+monkeys = []
 modulus = 1
 for l in open("../../inputs/day11.txt","rt"):
   l = l.strip()
